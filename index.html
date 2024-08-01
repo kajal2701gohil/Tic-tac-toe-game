@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div class="square">
+            <div class="gameDiv playerInfo">
+                <div class="form">
+                    <div id="mickey">
+                        <img src="https://seeklogo.com/images/M/mickey-mouse-logo-62EE200F47-seeklogo.com.png"
+                            alt="mickey" title="mickey">
+                    </div>
+                    <label for="">Player 1</label>
+                    <input type="text" id="player1">
+                    <label for="">Player 2</label>
+                    <input type="text" id="player2">
+                    <button class="btn" onclick="getPlayerNames()">Start</button>
+                </div>
+            </div>
+            <div class="gameDiv">
+                <div id="head">
+                    <div id="player">
+                        <i class="fa-solid fa-xmark"></i>
+                        <i class="fa-solid fa-o"></i>
+                    </div>
+                    <div id="playerTurn">
+                        <h5><span id="active">X </span> TURN</h5>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-power-off" title="play again" onclick="startGame()"></i>
+                        <i onclick="resetGame()" class="fa-solid fa-rotate-right" title="Reset"></i>
+                    </div>
+                </div>
+                <div class="game">
+                    <div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div id="div1">
+                        <h5> <span id="p1"></span><i class="fa-solid fa-o"></i></h5>
+                        <p id="scoreO">0</p>
+                    </div>
+                    <div id="div2">
+                        <h5><i id="winner"></i></h5>
+                        <p id="message"></p>
+                    </div>
+                    <div id="div3">
+                        <h5> <span id="p2"></span><i class="fa-solid fa-xmark"></i></h5>
+                        <p id="scoreX">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
